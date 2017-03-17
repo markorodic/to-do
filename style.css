@@ -1,16 +1,23 @@
 html {
-  font-family: Helevetic;
-  text-align: center;
+  font-family: Helvetica;
 }
 
-body {
-  max-width: 500px;
-  margin: 0 auto;
+.center {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 input {
-  padding-top: 30px;
-  width: 500px;
+  margin-top: 30px;
+  width: 400px;
   height: 60px;
   font-size: 40px;
   border: 0px; 
@@ -21,12 +28,14 @@ input:focus {
 }
 
 li {
-  text-align: left;
+  margin-left: -38px;
   font-size: 40px;
   list-style: none;
-  margin: 0;
+  font-family: Helvetica;
 }
 
 li:hover {
   text-decoration: line-through;
+  transition: all .1s linear;
+  color: #e5e5e5;
 }
